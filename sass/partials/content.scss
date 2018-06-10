@@ -1,0 +1,33 @@
+main {
+  background: #E1E1E1;
+  min-height: 100vh;
+
+  #to-do-list {
+    width: 65%;
+    margin: 0 auto;
+    padding: 24px 0;
+
+    /*#add*/
+    @import "partials/add-task";
+    /*#add-active*/
+    @import "partials/add-active";
+    /*exist-task*/
+    @import "partials/exist-task";
+
+    #count-task {
+      width: 620px;
+      margin: 0 auto;
+      padding: 0 0 0 44px;
+      line-height: 28px;
+      font-family: "Roboto-Italic";
+      font-style: italic;
+      font-size: 24px;
+      color: #C8C8C8;
+    }
+    .new-div {
+      height: 100px;
+      width: 620px;
+      border: 1px black solid;
+    }
+  }
+} 

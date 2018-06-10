@@ -1,0 +1,11 @@
+@import "partials/add-active";
+div[class^="exist-task"] {
+  @extend .add-active ;
+  display: block;
+  .bg-content {
+    display: none;
+  }
+  .cancel-add-btn {
+    display: none;
+  }
+}

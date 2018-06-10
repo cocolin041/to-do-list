@@ -1,0 +1,30 @@
+/* line 1, ../../sass/partials/header.scss */
+header {
+  background: #4A90E2;
+}
+/* line 4, ../../sass/partials/header.scss */
+header #bg-navbar {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 10, ../../sass/partials/header.scss */
+header #bg-navbar ul div {
+  display: inline-block;
+  padding: 23px 0 25px 0;
+  margin: 0 30px;
+  color: #00408B;
+}
+/* line 16, ../../sass/partials/header.scss */
+header #bg-navbar ul div > li {
+  font-size: 24px;
+  width: 160px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Roboto-Regular";
+}
+/* line 24, ../../sass/partials/header.scss */
+header #bg-navbar ul .active {
+  color: white;
+  border-bottom: 5px #00408B solid;
+}

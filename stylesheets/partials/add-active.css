@@ -1,0 +1,148 @@
+/*add active*/
+/* line 2, ../../sass/partials/add-active.scss */
+.add-active {
+  /*display: none;*/
+  background: #F2F2F2;
+  width: 620px;
+  margin: 24px auto;
+  box-shadow: 0 4px 4px 0 #C8C8C8;
+  border-radius: 5px;
+  /*bg-title*/
+  /*bg-content*/
+}
+/* line 11, ../../sass/partials/add-active.scss */
+.add-active .bg-title {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 2px solid #C8C8C8;
+  padding: 24px 0 0;
+  font-size: 24px;
+  /*title left*/
+  /*title right*/
+}
+/* line 18, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-left {
+  float: left;
+  background: white;
+  border-radius: 2px;
+  text-align: center;
+  margin: 0 16px 0 32px;
+}
+/* line 24, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-left i {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  width: 24px;
+}
+/* line 33, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right {
+  line-height: 28px;
+  display: inline-block;
+  width: 548px;
+}
+/* line 37, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right input {
+  font-size: 24px;
+}
+/* line 39, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right input[type="text"] {
+  border: none;
+  background: none;
+}
+/* line 42, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right input[type="text"]::placeholder {
+  color: black;
+}
+/* line 47, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right > i {
+  float: right;
+  margin-right: 32px;
+}
+/* line 51, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right .star-black {
+  color: black;
+}
+/* line 54, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right .star-orange {
+  color: #F5A623;
+}
+/* line 57, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right .icon-on-title {
+  margin: 16px 0 17px;
+  color: #757575;
+}
+/* line 60, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right .icon-on-title i {
+  margin: 0 16px 0 0;
+  display: none;
+  font-size: 18px;
+}
+/* line 64, ../../sass/partials/add-active.scss */
+.add-active .bg-title .title-right .icon-on-title i span {
+  margin: 0 8px;
+  font-size: 16px;
+}
+/* line 74, ../../sass/partials/add-active.scss */
+.add-active .bg-content {
+  padding: 24px 0;
+  /*deadline*/
+}
+/* line 77, ../../sass/partials/add-active.scss */
+.add-active .bg-content .model, .add-active .bg-content .deadline, .add-active .bg-content .file-upload, .add-active .bg-content .comment {
+  padding: 0 0 0 72px;
+  margin: 0 0 22px 0;
+}
+/* line 80, ../../sass/partials/add-active.scss */
+.add-active .bg-content .model i, .add-active .bg-content .deadline i, .add-active .bg-content .file-upload i, .add-active .bg-content .comment i {
+  font-size: 17px;
+  float: left;
+}
+/* line 84, ../../sass/partials/add-active.scss */
+.add-active .bg-content .model > div, .add-active .bg-content .deadline > div, .add-active .bg-content .file-upload > div, .add-active .bg-content .comment > div {
+  font-size: 20px;
+  overflow: hidden;
+  padding: 0 0 0 11px;
+}
+/* line 88, ../../sass/partials/add-active.scss */
+.add-active .bg-content .model > div div, .add-active .bg-content .deadline > div div, .add-active .bg-content .file-upload > div div, .add-active .bg-content .comment > div div {
+  margin: 0 0 8px 0;
+}
+/* line 95, ../../sass/partials/add-active.scss */
+.add-active .bg-content .deadline input {
+  padding: 8px 69px 8px 16px;
+}
+/* line 101, ../../sass/partials/add-active.scss */
+.add-active .bg-content .file-upload button {
+  background: #C8C8C8;
+  border-radius: 2px;
+  width: 32px;
+  height: 32px;
+  color: white;
+  font-size: 24px;
+}
+/* line 112, ../../sass/partials/add-active.scss */
+.add-active .bg-content .comment input {
+  height: 104px;
+  width: 413px;
+}
+/* line 120, ../../sass/partials/add-active.scss */
+.add-active .cancel-add-btn button {
+  width: 310px;
+  height: 60px;
+  font-size: 24px;
+  line-height: 28px;
+  border: none;
+  font-family: "Roboto-Regular";
+  text-align: center;
+}
+/* line 129, ../../sass/partials/add-active.scss */
+.add-active .cancel-add-btn .cancel-btn {
+  background-color: #FFFFFF;
+  float: left;
+  color: #D0021B;
+}
+/* line 134, ../../sass/partials/add-active.scss */
+.add-active .cancel-add-btn .add-btn {
+  background: #4A90E2;
+  color: #FFFFFF;
+}

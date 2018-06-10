@@ -1,0 +1,140 @@
+/*add active*/
+.add-active {
+  /*display: none;*/
+  background: #F2F2F2;
+  width: 620px;
+  margin: 24px auto;
+  box-shadow: 0 4px 4px 0 #C8C8C8;
+  border-radius: 5px;
+
+  /*bg-title*/
+  .bg-title {
+    border-radius: 5px 5px 0 0;
+    border-bottom: 2px solid #C8C8C8;
+    padding: 24px 0 0;
+    font-size: 24px;
+
+    /*title left*/
+    .title-left {
+      float:left;
+      background: white;
+      border-radius: 2px;
+      text-align: center;
+      margin: 0 16px 0 32px;
+      i {
+        color: white; 
+        font-size: 16px;
+        line-height: 24px;
+        width: 24px;
+      }
+    }
+
+    /*title right*/
+    .title-right {
+      line-height: 28px;
+      display: inline-block;
+      width: 548px;
+      input {
+        font-size: 24px;
+        &[type="text"] {
+          border: none;
+          background: none;
+          &::placeholder {
+            color: black;
+          }
+        }
+      }
+      > i {
+        float: right;
+        margin-right: 32px;
+      }
+      .star-black {
+        color: black;
+      }
+      .star-orange {
+        color: #F5A623;
+      }
+      .icon-on-title {
+        margin: 16px 0 17px;
+        color: #757575;
+        i {
+          margin: 0 16px 0 0;
+          display: none;
+          font-size: 18px;
+          span {
+            margin: 0 8px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  /*bg-content*/
+  .bg-content {
+    padding: 24px 0;
+    /*deadline*/
+    .model {
+      padding: 0 0 0 72px;
+      margin: 0 0 22px 0;
+      i {
+        font-size: 17px;
+        float: left;
+      }
+      > div {
+        font-size: 20px;
+        overflow: hidden;
+        padding: 0 0 0 11px;
+        div {
+          margin: 0 0 8px 0;
+        }
+      }
+    }
+    .deadline {
+      @extend .model;
+      input {
+        padding: 8px 69px 8px 16px;
+      }
+    }
+    .file-upload {
+      @extend .model;
+      button {
+        background: #C8C8C8;
+        border-radius: 2px;
+        width: 32px;
+        height: 32px;
+        color: white;
+        font-size: 24px;
+      }
+    }
+    .comment {
+      @extend .model;
+      input {
+        height: 104px;
+        width: 413px;
+      }
+    }
+  }
+
+  .cancel-add-btn {
+    button {
+      width: 310px;
+      height: 60px;
+      font-size: 24px;
+      line-height: 28px;
+      border: none;
+      font-family: "Roboto-Regular";
+      text-align: center;
+    }
+    .cancel-btn {
+      background-color: #FFFFFF;
+      float: left;
+      color: #D0021B;
+    }
+    .add-btn {
+      background: #4A90E2;
+      color: #FFFFFF;
+
+    }
+  }
+}

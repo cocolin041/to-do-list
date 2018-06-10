@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./stylesheets/screen.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--header-->
+  <header>
+    <div id="bg-navbar">
+      <ul>
+        <div class = "active" onclick="changeStatus(this);"><li>My Tasks</li></div>
+        <div onclick="changeStatus(this);"><li>In Progress</li></div>
+        <div onclick="changeStatus(this);"><li>Completed</li></div>
+      </ul>
+    </div>
+  </header>
+
+  <!--main-->
+  <main>
+    <div id="to-do-list">
+
+      <!--add-->
+      <div id="add-task" onclick="addTask(this);">
+        <span id="plus">＋</span>
+        <input type="text" placeholder="Add Task">
+      </div>
+      <!--every timeclick add task, will create an add-active-->
+      <!--add active: this is for new note-->
+      
+    
+      <div class="add-active" draggable="true" ondragstart="drag(event)">
+        
+        <div class="bg-title">
+          <div class = "title-left" onclick = "check(this);">
+            <i class="fas fa-check"></i>
+          </div>
+          <div class="title-right">
+            <input type="text" placeholder="Type Something Here...">
+            <i class="fas fa-pencil-alt pen" onclick="editTask(this);"></i>
+            <i class="fas fa-star star star-black"></i>
+            <i class="fas fa-trash-alt" onclick="Delete(this);"></i>
+            <div class="icon-on-title">
+              <i class="far fa-calendar-alt"></i>
+              <i class="far fa-file"></i>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-content">
+          <div class="deadline">
+            <i class="far fa-calendar-alt"></i>
+            <div>
+              <div>Deadline</div>
+              <input type="date" placeholder="yyyy/mm/dd">
+              <input type="time" placeholder="hh/mm">
+            </div>
+          </div>
+          
+          <div class="file-upload">
+            <i class="far fa-file"></i>
+            <div>
+              <div>File</div>
+              <button>&#x2B</button>
+            </div>
+          </div>
+          
+          <div class="comment">
+            <i class="fas fa-comment-dots"></i>
+            <div>
+              <div>Comment</div>
+              <input type="text" placeholder="Type your memo here...">
+            </div>
+          </div>
+
+        </div>
+
+        
+        <div class="cancel-add-btn">
+          <button class="cancel-btn" onclick="Cancel(this);">Ｘ Cancel</button>
+          <button class="add-btn" onclick="Save(this);">＋ Add Task</button>
+        </div>
+
+      </div>
+
+      <div class="exist-task" draggable="true" ondragstart="drag(event)" ondragover="createDiv(event)">
+        
+        <div class="bg-title">
+          <div class = "title-left" onclick = "check(this);">
+            <i class="fas fa-check"></i>
+          </div>
+          <div class="title-right">
+            <input type="text" placeholder="Type Something Here...">
+            <i class="fas fa-pencil-alt pen" onclick="editTask(this);"></i>
+            <i class="fas fa-star star star-black"></i>
+            <i class="fas fa-trash-alt" onclick="Delete(this);"></i>
+            <div class="icon-on-title">
+              <i class="far fa-calendar-alt"></i>
+              <i class="far fa-file"></i>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-content">
+          <div class="deadline">
+            <i class="far fa-calendar-alt"></i>
+            <div>
+              <div>Deadline</div>
+              <input type="date" placeholder="yyyy/mm/dd">
+              <input type="time" placeholder="hh/mm">
+            </div>
+          </div>
+          
+          <div class="file-upload">
+            <i class="far fa-file"></i>
+            <div>
+              <div>File</div>
+              <button>&#x2B</button>
+            </div>
+          </div>
+          
+          <div class="comment">
+            <i class="fas fa-comment-dots"></i>
+            <div>
+              <div>Comment</div>
+              <input type="text" placeholder="Type your memo here...">
+            </div>
+          </div>
+
+        </div>
+
+        
+        <div class="cancel-add-btn">
+          <button class="cancel-btn" onclick="Cancel(this);">Ｘ Cancel</button>
+          <button class="add-btn" onclick="Save(this);">＋ Save</button>
+        </div>
+
+      </div>
+
+      <div class="exist-task" draggable="true" ondragstart="drag(event)" ondragover="createDiv(event)">
+        
+          <div class="bg-title">
+            <div class = "title-left" onclick = "check(this);">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="title-right">
+              <input type="text" placeholder="Type Something Here...">
+              <i class="fas fa-pencil-alt pen" onclick="editTask(this);"></i>
+              <i class="fas fa-star star star-black"></i>
+              <i class="fas fa-trash-alt" onclick="Delete(this);"></i>
+              <div class="icon-on-title">
+                <i class="far fa-calendar-alt"></i>
+                <i class="far fa-file"></i>
+                <i class="fas fa-comment-dots"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-content">
+            <div class="deadline">
+              <i class="far fa-calendar-alt"></i>
+              <div>
+                <div>Deadline</div>
+                <input type="date" placeholder="yyyy/mm/dd">
+                <input type="time" placeholder="hh/mm">
+              </div>
+            </div>
+            
+            <div class="file-upload">
+              <i class="far fa-file"></i>
+              <div>
+                <div>File</div>
+                <button>&#x2B</button>
+              </div>
+            </div>
+            
+            <div class="comment">
+              <i class="fas fa-comment-dots"></i>
+              <div>
+                <div>Comment</div>
+                <input type="text" placeholder="Type your memo here...">
+              </div>
+            </div>
+  
+          </div>
+  
+          
+          <div class="cancel-add-btn">
+            <button class="cancel-btn" onclick="Cancel(this);">Ｘ Cancel</button>
+            <button class="add-btn" onclick="Save(this);">＋ Save</button>
+          </div>
+  
+        </div>
+
+      <div id="count-task"></div>
+    <!---->
+    </div>
+    
+  </main>
+
+  <script src="./src/add_task.js"></script>
+  <script src="./src/moveStarUp.js"></script>
+  <script src="./src/editTask.js"></script>
+  <script src="./src/cancel.js"></script>
+  <script src="./src/save.js"></script>
+  <script src="./src/delete.js"></script>
+  <script src="./src/addStar.js"></script>
+  <script src="./src/check.js"></script>
+  <script src="./src/taskStatus.js"></script>
+  <script src="./src/count_task.js"></script>
+  <script src="./src/dragEvent.js"></script>
+</body>
