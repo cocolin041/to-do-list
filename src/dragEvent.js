@@ -43,7 +43,8 @@ function createDiv(ev) {
     var new_div = document.createElement("DIV");
     new_div.style.width = "620px";
     new_div.style.height = "70px";
-    new_div.style.border = "1px solid #aaaaaa";
+    new_div.style.border = "none";
+    //new_div.style.border = "1px solid #aaaaaa";
 
     new_div.addEventListener("drop", function(event) {
       drop(event);
@@ -62,7 +63,8 @@ function createDiv(ev) {
     var new_div = document.createElement("DIV");
     new_div.style.width = "620px";
     new_div.style.height = "70px";
-    new_div.style.border = "1px solid #aaaaaa";
+    new_div.style.border = "none";
+    //new_div.style.border = "1px solid #aaaaaa";
     new_div.addEventListener("drop", drop, true);
     new_div.addEventListener("dragover", function(event) {
       allowDrop(event);
