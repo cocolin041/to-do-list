@@ -10,7 +10,7 @@ function check(x) {
   if (title_right.children[0].nodeName === "INPUT") {
 
     //remove the mark => change title-left background to white (checkbox background to white)
-    x.style.background = "#4A90E2";
+    x.children[0].style.background = "#4A90E2";
     //change the bg_title background to original
     bg_title.style.background = "#F2F2F2";
 
@@ -43,7 +43,7 @@ function check(x) {
     //remove complete
 
     //show the mark => change title-left background to blue (checkbox background to blue)
-    x.style.background = "white";
+    x.children[0].style.background = "white";
 
     //create input
     var input_element = document.createElement("INPUT");
