@@ -9,6 +9,14 @@ function addTask(x) {
     //div bg-title
     var bg_title = document.createElement("DIV");
     bg_title.className = "bg-title";
+    bg_title.setAttribute("draggable", "true");
+    bg_title.addEventListener("dragstart", function(event) {
+      drag(event);
+    });
+    bg_title.addEventListener("dragover", function() {
+      createDiv(event);
+      allowDrop(event);
+    });
       //title-left
       var title_left = document.createElement("DIV");
       title_left.className = "title-left";
