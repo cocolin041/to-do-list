@@ -165,102 +165,109 @@ main #to-do-list .add-active .bg-title, main #to-do-list div[class^="exist-task"
   /*title right*/
 }
 /* line 17, ../sass/partials/add-active.scss */
-main #to-do-list .add-active .bg-title:hover, main #to-do-list div[class^="exist-task"] .bg-title:hover {
-  background: #FFF2DC;
+main #to-do-list .add-active .bg-title > i, main #to-do-list div[class^="exist-task"] .bg-title > i {
+  float: left;
+  margin: 0 0 0 8px;
+  color: #D8D8D8;
+  display: none;
 }
-/* line 21, ../sass/partials/add-active.scss */
+/* line 23, ../sass/partials/add-active.scss */
+main #to-do-list .add-active .bg-title:hover > i, main #to-do-list div[class^="exist-task"] .bg-title:hover > i {
+  display: block;
+}
+/* line 28, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-left, main #to-do-list div[class^="exist-task"] .bg-title .title-left {
   float: left;
+  text-align: center;
+}
+/* line 31, ../sass/partials/add-active.scss */
+main #to-do-list .add-active .bg-title .title-left i:nth-child(1), main #to-do-list div[class^="exist-task"] .bg-title .title-left i:nth-child(1) {
   background: white;
   border-radius: 2px;
-  text-align: center;
-  margin: 0 16px 0 32px;
-}
-/* line 27, ../sass/partials/add-active.scss */
-main #to-do-list .add-active .bg-title .title-left i, main #to-do-list div[class^="exist-task"] .bg-title .title-left i {
   color: white;
   font-size: 16px;
   line-height: 24px;
   width: 24px;
+  margin: 0 16px 0 24px;
 }
-/* line 36, ../sass/partials/add-active.scss */
+/* line 43, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right, main #to-do-list div[class^="exist-task"] .bg-title .title-right {
   line-height: 28px;
   display: inline-block;
-  width: 548px;
+  width: 539px;
 }
-/* line 40, ../sass/partials/add-active.scss */
+/* line 47, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right input, main #to-do-list div[class^="exist-task"] .bg-title .title-right input {
   font-size: 24px;
 }
-/* line 42, ../sass/partials/add-active.scss */
+/* line 49, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right input[type="text"], main #to-do-list div[class^="exist-task"] .bg-title .title-right input[type="text"] {
   border: none;
   background: none;
 }
-/* line 45, ../sass/partials/add-active.scss */
+/* line 52, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right input[type="text"]::placeholder, main #to-do-list div[class^="exist-task"] .bg-title .title-right input[type="text"]::placeholder {
   color: black;
 }
-/* line 50, ../sass/partials/add-active.scss */
+/* line 57, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right > i, main #to-do-list div[class^="exist-task"] .bg-title .title-right > i {
   float: right;
   margin-right: 32px;
 }
-/* line 54, ../sass/partials/add-active.scss */
+/* line 61, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right .star-black, main #to-do-list div[class^="exist-task"] .bg-title .title-right .star-black {
   color: black;
 }
-/* line 57, ../sass/partials/add-active.scss */
+/* line 64, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right .star-orange, main #to-do-list div[class^="exist-task"] .bg-title .title-right .star-orange {
   color: #F5A623;
 }
-/* line 60, ../sass/partials/add-active.scss */
+/* line 67, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right .icon-on-title, main #to-do-list div[class^="exist-task"] .bg-title .title-right .icon-on-title {
   margin: 16px 0 17px;
   color: #757575;
 }
-/* line 63, ../sass/partials/add-active.scss */
+/* line 70, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right .icon-on-title i, main #to-do-list div[class^="exist-task"] .bg-title .title-right .icon-on-title i {
   margin: 0 16px 0 0;
   display: none;
   font-size: 18px;
 }
-/* line 67, ../sass/partials/add-active.scss */
+/* line 74, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-title .title-right .icon-on-title i span, main #to-do-list div[class^="exist-task"] .bg-title .title-right .icon-on-title i span {
   margin: 0 8px;
   font-size: 16px;
 }
-/* line 77, ../sass/partials/add-active.scss */
+/* line 84, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-content, main #to-do-list div[class^="exist-task"] .bg-content {
   padding: 24px 0;
   /*deadline*/
 }
-/* line 80, ../sass/partials/add-active.scss */
+/* line 87, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-content .model, main #to-do-list div[class^="exist-task"] .bg-content .model, main #to-do-list .add-active .bg-content .deadline, main #to-do-list div[class^="exist-task"] .bg-content .deadline, main #to-do-list .add-active .bg-content .file-upload, main #to-do-list div[class^="exist-task"] .bg-content .file-upload, main #to-do-list .add-active .bg-content .comment, main #to-do-list div[class^="exist-task"] .bg-content .comment {
   padding: 0 0 0 72px;
   margin: 0 0 22px 0;
 }
-/* line 83, ../sass/partials/add-active.scss */
+/* line 90, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-content .model i, main #to-do-list div[class^="exist-task"] .bg-content .model i, main #to-do-list .add-active .bg-content .deadline i, main #to-do-list div[class^="exist-task"] .bg-content .deadline i, main #to-do-list .add-active .bg-content .file-upload i, main #to-do-list div[class^="exist-task"] .bg-content .file-upload i, main #to-do-list .add-active .bg-content .comment i, main #to-do-list div[class^="exist-task"] .bg-content .comment i {
   font-size: 17px;
   float: left;
 }
-/* line 87, ../sass/partials/add-active.scss */
+/* line 94, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-content .model > div, main #to-do-list div[class^="exist-task"] .bg-content .model > div, main #to-do-list .add-active .bg-content .deadline > div, main #to-do-list div[class^="exist-task"] .bg-content .deadline > div, main #to-do-list .add-active .bg-content .file-upload > div, main #to-do-list div[class^="exist-task"] .bg-content .file-upload > div, main #to-do-list .add-active .bg-content .comment > div, main #to-do-list div[class^="exist-task"] .bg-content .comment > div {
   font-size: 20px;
   overflow: hidden;
   padding: 0 0 0 11px;
 }
-/* line 91, ../sass/partials/add-active.scss */
+/* line 98, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-content .model > div div, main #to-do-list div[class^="exist-task"] .bg-content .model > div div, main #to-do-list .add-active .bg-content .deadline > div div, main #to-do-list div[class^="exist-task"] .bg-content .deadline > div div, main #to-do-list .add-active .bg-content .file-upload > div div, main #to-do-list div[class^="exist-task"] .bg-content .file-upload > div div, main #to-do-list .add-active .bg-content .comment > div div, main #to-do-list div[class^="exist-task"] .bg-content .comment > div div {
   margin: 0 0 8px 0;
 }
-/* line 98, ../sass/partials/add-active.scss */
+/* line 105, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-content .deadline input, main #to-do-list div[class^="exist-task"] .bg-content .deadline input {
   padding: 8px 69px 8px 16px;
 }
-/* line 104, ../sass/partials/add-active.scss */
+/* line 111, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-content .file-upload button, main #to-do-list div[class^="exist-task"] .bg-content .file-upload button {
   background: #C8C8C8;
   border-radius: 2px;
@@ -269,12 +276,12 @@ main #to-do-list .add-active .bg-content .file-upload button, main #to-do-list d
   color: white;
   font-size: 24px;
 }
-/* line 115, ../sass/partials/add-active.scss */
+/* line 122, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .bg-content .comment input, main #to-do-list div[class^="exist-task"] .bg-content .comment input {
   height: 104px;
   width: 413px;
 }
-/* line 123, ../sass/partials/add-active.scss */
+/* line 130, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .cancel-add-btn button, main #to-do-list div[class^="exist-task"] .cancel-add-btn button {
   width: 310px;
   height: 60px;
@@ -284,13 +291,13 @@ main #to-do-list .add-active .cancel-add-btn button, main #to-do-list div[class^
   font-family: "Roboto-Regular";
   text-align: center;
 }
-/* line 132, ../sass/partials/add-active.scss */
+/* line 139, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .cancel-add-btn .cancel-btn, main #to-do-list div[class^="exist-task"] .cancel-add-btn .cancel-btn {
   background-color: #FFFFFF;
   float: left;
   color: #D0021B;
 }
-/* line 137, ../sass/partials/add-active.scss */
+/* line 144, ../sass/partials/add-active.scss */
 main #to-do-list .add-active .cancel-add-btn .add-btn, main #to-do-list div[class^="exist-task"] .cancel-add-btn .add-btn {
   background: #4A90E2;
   color: #FFFFFF;

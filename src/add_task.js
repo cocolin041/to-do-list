@@ -17,6 +17,10 @@ function addTask(x) {
       createDiv(event);
       allowDrop(event);
     });
+      //icon ellipsis
+      var icon_ellipsis = document.createElement("I");
+      icon_ellipsis.className = "fas fa-ellipsis-v";
+
       //title-left
       var title_left = document.createElement("DIV");
       title_left.className = "title-left";
@@ -80,6 +84,7 @@ function addTask(x) {
         title_right.appendChild(icon_on_title);
 
     //finish bg-title => bg-title append title_left and title_right
+    bg_title.appendChild(icon_ellipsis);
     bg_title.appendChild(title_left);
     bg_title.appendChild(title_right);
 

@@ -8,7 +8,7 @@ function Cancel(x) {
   //if the cancel is on the new adding note, but not add task
   if (x.parentElement.parentElement.className === "add-active") {
     var bg_title = bg_content.previousElementSibling;
-    var title_right = bg_title.children[1];
+    var title_right = bg_title.children[2];
     var trashcan = title_right.children[3];
     Delete(trashcan);
     add_task.style.display = "block";

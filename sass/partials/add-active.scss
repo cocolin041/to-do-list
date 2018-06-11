@@ -14,21 +14,28 @@
     padding: 24px 0 0;
     font-size: 24px;
 
-    &:hover {
-      background: #FFF2DC;
+    > i {
+      float: left;
+      margin: 0 0 0 8px;
+      color: #D8D8D8;
+      display: none;
     }
+    &:hover > i {
+      display: block;
+    }
+
     /*title left*/
     .title-left {
       float:left;
-      background: white;
-      border-radius: 2px;
       text-align: center;
-      margin: 0 16px 0 32px;
-      i {
+      i:nth-child(1) {
+        background: white;
+        border-radius: 2px;
         color: white; 
         font-size: 16px;
         line-height: 24px;
         width: 24px;
+        margin: 0 16px 0 24px;
       }
     }
 
@@ -36,7 +43,7 @@
     .title-right {
       line-height: 28px;
       display: inline-block;
-      width: 548px;
+      width: 539px;
       input {
         font-size: 24px;
         &[type="text"] {
