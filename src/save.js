@@ -5,7 +5,7 @@ function Save(x) {
   var add_active = cancel_add_btn.parentElement;
   var add_task = document.getElementById("add-task");
   var bg_title = bg_content.previousElementSibling;
-  var title_right = bg_title.children[1];
+  var title_right = bg_title.children[2];
   var title = title_right.children[0];
   
   if (title.value === "") {
@@ -29,7 +29,7 @@ function Save(x) {
 
     //change pen color => black
     var bg_title = bg_content.previousElementSibling;
-    var pen = bg_title.children[1].children[1];
+    var pen = bg_title.children[2].children[1];
     pen.style.color = "black";
 
     //check whether there's new orange star needs to be moved up
