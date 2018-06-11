@@ -53,8 +53,13 @@ function createDiv(ev) {
     });
     
     new_div.className = "new-div";
-    ev.target.parentElement.parentElement.insertBefore(new_div, ev.target.parentElement);
     
+    if (ev.target.className === "bg-title") {
+      ev.target.parentElement.parentElement.insertBefore(new_div, ev.target.parentElement);
+    } else {
+      return;
+    }
+
   } else {
     
     check_new_div[0].remove();
@@ -69,7 +74,12 @@ function createDiv(ev) {
     });
     
     new_div.className = "new-div";
-    ev.target.parentElement.parentElement.insertBefore(new_div, ev.target.parentElement);
-  
+
+    if (ev.target.className === "bg-title") {
+      ev.target.parentElement.parentElement.insertBefore(new_div, ev.target.parentElement);
+    } else {
+      return;
+    }
+
   }
 }
