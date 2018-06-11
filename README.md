@@ -6,4 +6,7 @@ https://cocolin041.github.io/to-do-list/
 ## Finish with: 
 plain Javascript, CSS, SASS
 ## Function: 
-move task with star on the top, divide into in-progress and complete tasks , save, cancel, delete, draggable
+1. move task with star on the top
+2. divide into in-progress and complete tasks
+3. save, cancel, delete
+4. draggable
